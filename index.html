@@ -1,53 +1,175 @@
 <!DOCTYPE html>
-
-<html lang="fr">
-
+<html lang="fr" class="scroll-smooth">
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pneus Mobiles Laval - Service à domicile</title>
-
-<style>
-
-body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background: #f4f6f9; color: #333; }
-
-.container { background: white; max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-
-h1 { color: #1a365d; margin-bottom: 10px; }
-
-p { font-size: 1.1em; line-height: 1.5; color: #555; }
-
-.contact-box { background: #edf2f7; padding: 20px; border-radius: 8px; margin-top: 25px; }
-
-.contact-box a { color: #2b6cb0; text-decoration: none; font-weight: bold; }
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pneus Mobiles Laval | Changement de pneus à domicile & au bureau</title>
+  <meta name="description" content="Changement, réparation et entretien de pneus à domicile et au bureau à Laval et ses environs. Évitez les files d'attente, on vient à vous !">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0b192c',
+            brandBlue: '#1e3e62',
+            brandGold: '#fca311',
+            brandLight: '#f8f9fa'
+          }
+        }
+      }
+    }
+  </script>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-<body>
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-brandDark text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i data-lucide="disc" class="w-8 h-8 text-brandGold animate-spin-slow"></i>
+        <span class="text-xl font-bold tracking-tight text-white">Pneus Mobiles <span class="text-brandGold">Laval</span></span>
+      </div>
+      <a href="tel:5146252007" class="inline-flex items-center gap-2 bg-brandGold hover:bg-yellow-500 text-brandDark font-bold px-4 py-2 rounded-full transition shadow-md">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span>514 625 2007</span>
+      </a>
+    </div>
+  </header>
 
-<div class="container">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-brandDark via-brandBlue to-brandDark text-white py-20 lg:py-28 px-4">
+    <div class="max-w-5xl mx-auto text-center space-y-8">
+      <span class="inline-block bg-brandGold/20 text-brandGold border border-brandGold/40 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
+        Bien chaussé !! — On vient à vous, pour vous !
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+        Changement de pneus à domicile & au bureau
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+        Changement, réparation et entretien de pneus sans bouger de votre fauteuil. Service rapide, fiable et pratique à <strong>Laval et ses environs</strong>.
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+        <a href="tel:5146252007" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brandGold hover:bg-yellow-500 text-brandDark text-xl font-extrabold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition transform">
+          <i data-lucide="phone-call" class="w-6 h-6"></i>
+          Appeler le 514 625 2007
+        </a>
+        <a href="mailto:contact@pneusmobileslaval.ca" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-lg font-semibold px-8 py-4 rounded-xl transition">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          Demander un devis
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h1>Pneus Mobiles Laval</h1>
+  <!-- Points Forts (Cards) -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="p-6 bg-brandLight rounded-2xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
+          <div class="w-14 h-14 mx-auto mb-4 bg-brandDark/10 text-brandDark rounded-full flex items-center justify-center">
+            <i data-lucide="home" class="w-7 h-7 text-brandBlue"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Service à domicile</h3>
+          <p class="text-gray-600 text-sm">À la maison ou au travail, nous nous déplaçons selon votre horaire.</p>
+        </div>
 
-<p>🛞 Notre site web complet arrive très bientôt !</p>
+        <div class="p-6 bg-brandLight rounded-2xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
+          <div class="w-14 h-14 mx-auto mb-4 bg-brandDark/10 text-brandDark rounded-full flex items-center justify-center">
+            <i data-lucide="clock" class="w-7 h-7 text-brandBlue"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Rapide et efficace</h3>
+          <p class="text-gray-600 text-sm">Évitez les files d'attente au garage. Un service sur mesure et sans perte de temps.</p>
+        </div>
 
-<p>Besoin d'un changement de pneus ou d'entretien à domicile à Laval et les environs ? Nous sommes déjà opérationnels.</p>
+        <div class="p-6 bg-brandLight rounded-2xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
+          <div class="w-14 h-14 mx-auto mb-4 bg-brandDark/10 text-brandDark rounded-full flex items-center justify-center">
+            <i data-lucide="wrench" class="w-7 h-7 text-brandBlue"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Équipement Pro</h3>
+          <p class="text-gray-600 text-sm">Matériel de pointe monté sur nos unités mobiles pour un service sécuritaire.</p>
+        </div>
 
-<div class="contact-box">
+        <div class="p-6 bg-brandLight rounded-2xl border border-gray-100 shadow-sm text-center hover:shadow-md transition">
+          <div class="w-14 h-14 mx-auto mb-4 bg-brandDark/10 text-brandDark rounded-full flex items-center justify-center">
+            <i data-lucide="thumbs-up" class="w-7 h-7 text-brandBlue"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Satisfaction garantie</h3>
+          <p class="text-gray-600 text-sm">Une équipe expérimentée dédiée à la sécurité et à la qualité de votre véhicule.</p>
+        </div>
 
-<p><strong>Téléphone :</strong> <a href="tel:5146252007">514 625-2007</a></p>
+      </div>
+    </div>
+  </section>
 
-<p><strong>Courriel :</strong> <a href="mailto:contact@pneusmobileslaval.ca">contact@pneusmobileslaval.ca</a></p>
+  <!-- Nos Services -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-brandDark">Nos Services Mobile</h2>
+        <p class="text-gray-600 mt-2">Nous couvrons la ville de Laval et l'ensemble de ses environs.</p>
+      </div>
 
-</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <i data-lucide="refresh-cw" class="w-10 h-10 text-brandGold mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Changement de pneus</h3>
+          <p class="text-gray-600 text-sm">Installation sur jantes ou montage/démontage complet directement chez vous.</p>
+        </div>
 
-</div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <i data-lucide="shield-alert" class="w-10 h-10 text-brandGold mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Réparation de crevaison</h3>
+          <p class="text-gray-600 text-sm">Réparation rapide sur place pour vous remettre sur la route en toute sécurité.</p>
+        </div>
 
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+          <i data-lucide="gauge" class="w-10 h-10 text-brandGold mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Entretien & Pression</h3>
+          <p class="text-gray-600 text-sm">Vérification de l'usure, équilibrage et ajustement de la pression d'air.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Call to action -->
+  <section class="py-16 bg-brandDark text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+      <h2 class="text-3xl font-extrabold">Prenez rendez-vous dès aujourd'hui !</h2>
+      <p class="text-gray-300 text-lg">Contactez-nous par téléphone ou courriel pour réserver votre plage horaire.</p>
+      
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 pt-6">
+        <a href="tel:5146252007" class="flex items-center gap-3 text-2xl font-bold text-brandGold hover:underline">
+          <i data-lucide="phone" class="w-7 h-7"></i>
+          514 625 2007
+        </a>
+        <a href="mailto:contact@pneusmobileslaval.ca" class="flex items-center gap-3 text-xl font-medium text-white hover:underline">
+          <i data-lucide="mail" class="w-6 h-6 text-brandGold"></i>
+          contact@pneusmobileslaval.ca
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-8 text-center text-sm">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p>&copy; Pneus Mobiles Laval. Tous droits réservés.</p>
+      <p>Secteur de couverture : Laval et environs.</p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Script -->
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
-
 </html>
